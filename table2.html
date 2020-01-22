@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Сайт о создании таблиц">
+    <meta name="keywords" content="HTML, таблицы, CSS">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Таблица 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+    <div class="page">
+    <a href="index.html">&larr;Назад</a>, <a href="table1.html">Таблица 1</a>
+    <table class="w-t1">
+        <caption>Родительская таблица</caption>
+        <tr>
+            <td class="w-3-1" colspan="2">1-2</td>
+            <td class="w-3">3 &mdash; Колонка шириной 60%</td>
+        </tr>
+        <tr>
+            <td class="w-4">4<br>Колонка шириной 28%</td>
+            <td colspan="2" rowspan="2">
+                <!-- начало вложенной таблицы -->
+                <table class="w-t2">
+                    <caption>Вложенная таблица</caption>
+                    <tr>
+                        <td>1</td>
+                        <td rowspan="3">2-5-8<br>Все колонки <br> шириной 33%</td>
+                        <td rowspan="2" class="h-47">3-6<br>Высота 200рх</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2" class="h-47">4-7<br>Высота 200рх</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td class="w-4">7</td>
+        </tr>
+    </table>
+    </div>
+</body>
+</html>
